@@ -8,7 +8,7 @@ function App() {
 
 function About() {
   return (
-    <h1>This is Jawad website about page</h1>
+    <h1>This is Jawad website about page.</h1>
   )
 }
 
