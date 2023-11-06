@@ -1,20 +1,12 @@
-import React from "react";
+import React from "react"
+import { Link } from "react-router-dom"
 
 export default function Home() {
-  return (
-    <>
-      <div className="home-content">
-        <div className="home-content-text">
-          <h1 className="home-content-main-heading">
-            You got the travel plans, we got the travel vans.
-          </h1>
-          <p className="home-content-paragraph">
-            Add adventure to your life by joining the #vanlife movement.
-            <br /> Rent the perfect van to make your perfect road trip.
-          </p>
-          <button className="van-button">Find your van</button>
+    return (
+        <div className="home-container">
+            <h1>You got the travel plans, we got the travel vans.</h1>
+            <p>Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>
+            <Link to="vans">Find your van</Link>
         </div>
-      </div>
-    </>
-  );
-}
+    )
+};
