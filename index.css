@@ -143,3 +143,135 @@ header a:hover {
     color: white;
     border-radius: 10px;
 }
+
+/*** VANS PAGE ***/
+.vans-page-container {
+    padding-inline: 23px;
+    color: #161616;
+    margin-bottom: 55px;
+}
+
+.vans-page-container h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.vans-grid {
+    display: grid;
+    grid-template: auto auto / repeat(2, 1fr);
+    gap: 35px;
+}
+
+.vans-grid img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.vans-grid .vans-text {
+    display: flex;
+
+}
+
+.vans-grid .vans-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.vans-grid .vans-price-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.vans-grid .vans-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.vans-grid .vans-per {
+    font-weight: 500;
+    /* line-height: 32px; */
+    font-family: 'Avenir Next';
+    margin-top: -5px;
+}
+
+.vans-grid .vans-button {
+    text-transform: capitalize;
+    border-radius: 5px;
+    color: #FFEAD0;
+    font-size: 16px;
+    background-color: #161616;
+    height: 35px;
+    width: 85px;
+    font-weight: 600;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.vans-grid .vans-button.luxury:hover {
+    background-color: grey;
+}
+
+.vans-grid .vans-button.simple {
+    background-color: #E17654;
+}
+
+.vans-grid .vans-button.simple:hover {
+    background-color: #e9997f;
+}
+
+.vans-grid .vans-button.rugged {
+    background-color: #115E59;
+}
+
+.vans-grid .vans-button.rugged:hover {
+    background-color: #198982;
+}
+
+.vans-filters {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.vans-filters-clear {
+    margin-left: auto;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.vans-filters-clear:hover {
+    color: grey;
+}
+
+.vans-filters-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-right: 60px;
+}
+
+.vans-filters-buttons button {
+    width: 100px;
+    height: 35px;
+    padding: 5px 25px;
+    background: #FFEAD0;
+    border: none;
+    border-radius: 5px;
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.vans-filters-buttons button:hover {
+    background-color: #ffe2d0;
+}
