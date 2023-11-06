@@ -19,12 +19,16 @@ nav {
     align-items: center;
 }
 
-nav > a {
+nav>a {
     text-decoration: none;
-    color: black;
+    color: #161616;
     font-size: 16px;
     font-weight: 600;
     line-height: 23px;
+}
+
+nav>a.selected {
+    text-decoration-line: underline;
 }
 
 .main-logo {
@@ -77,6 +81,54 @@ nav > a {
     margin-top: 40px;
 }
 
+.about-content img {
+    width: 100%;
+}
+
+.about-info {
+    padding: 50px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.about-vans-info {
+    border-radius: 5px;
+    background: #FFCC8D;
+    padding: 30px;
+    width: 100%;
+}
+
+.about-vans-info h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.about-vans-btn {
+    background: #161616;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 10px;
+    
+}
+
 /* .home-bg {
     width: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.46) 100%), url(<path-to-image>), lightgray 0px -65.191px / 100% 178.109% no-repeat;
@@ -96,4 +148,3 @@ footer {
     font-weight: 500;
     line-height: 23px;
 }
-
