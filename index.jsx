@@ -1,28 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
-  );
+    <h1>Start here</h1>
+  )
 }
 
-function Home() {
-  return <h1>Hello, React Router!</h1>;
-}
 
-function About() {
-  return <h1>This is the about page. 🎉</h1>;
-}
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+ReactDOM
+  .createRoot(document.getElementById("root"))
+  .render(<App />);
