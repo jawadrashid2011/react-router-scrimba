@@ -3,21 +3,22 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+function Home() {
   return <h1>Hello, React Router!</h1>;
 }
 
 function About() {
-  return (
-    <h1>This is Jawad website about page.</h1>
-  )
+  return <h1>This is the about page.</h1>;
 }
 
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
-  </BrowserRouter>
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
