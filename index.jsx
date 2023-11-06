@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
+    <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -18,7 +20,7 @@ function Home() {
 }
 
 function About() {
-  return <h1>This is the about page.</h1>;
+  return <h1>This is the about page. 🎉</h1>;
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
