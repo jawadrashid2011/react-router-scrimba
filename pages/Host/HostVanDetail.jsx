@@ -7,8 +7,8 @@ export default function HostVanDetail() {
   const vanDetailActiveStyle = {
     textDecoration: "underline",
     fontWeight: "bold",
-    color: "#161616"
-  }
+    color: "#161616",
+  };
 
   React.useEffect(() => {
     fetch(`/api/host/vans/${id}`)
@@ -41,23 +41,22 @@ export default function HostVanDetail() {
           <NavLink
             to="."
             end
-            style={({isActive}) => isActive ? vanDetailActiveStyle : null}
+            style={({ isActive }) => (isActive ? vanDetailActiveStyle : null)}
           >
             Details
           </NavLink>
           <NavLink
             to="pricing"
-            style={({isActive}) => isActive ? vanDetailActiveStyle : null}
+            style={({ isActive }) => (isActive ? vanDetailActiveStyle : null)}
           >
             Pricing
           </NavLink>
           <NavLink
             to="photos"
-            style={({isActive}) => isActive ? vanDetailActiveStyle : null}
+            style={({ isActive }) => (isActive ? vanDetailActiveStyle : null)}
           >
             Photos
           </NavLink>
-          
         </nav>
 
         <Outlet />
