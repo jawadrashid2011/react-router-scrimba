@@ -51,6 +51,10 @@ header a:hover {
     text-decoration: underline;
 }
 
+header a.site-logo:hover {
+    text-decoration: none;
+}
+
 main {
     margin-bottom: 84px;
 }
