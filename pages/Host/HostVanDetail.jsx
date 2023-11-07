@@ -4,6 +4,7 @@ import { useParams, Link, Outlet, NavLink } from "react-router-dom";
 export default function HostVanDetail() {
   const { id } = useParams();
   const [currentVan, setCurrentVan] = React.useState(null);
+
   const vanDetailActiveStyle = {
     textDecoration: "underline",
     fontWeight: "bold",
@@ -59,7 +60,7 @@ export default function HostVanDetail() {
           </NavLink>
         </nav>
 
-        <Outlet />
+        <Outlet context={[currentVan, setCurrentVan]} />
       </div>
     </section>
   );
